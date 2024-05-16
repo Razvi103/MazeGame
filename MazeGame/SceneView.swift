@@ -6,13 +6,22 @@
 //
 
 import SwiftUI
+import RealityKit
+import RealityKitContent
 
 struct SceneView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RealityView { content in
+            // Add the initial RealityKit content
+            if let scene = try? await Entity(named: "Scene", in: realityKitContentBundle) {
+                print("LOADED")
+                content.add(scene)
+            }
+        }
     }
 }
 
 #Preview {
     SceneView()
 }
+
