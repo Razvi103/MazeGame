@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4E6167C32BF5937A00B7222D /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6167C22BF5937A00B7222D /* SceneView.swift */; };
+		4E6167CD2BF5983800B7222D /* barrier.usdc in Resources */ = {isa = PBXBuildFile; fileRef = 4E6167C72BF5983800B7222D /* barrier.usdc */; };
+		4E6167CE2BF5983800B7222D /* coin.usdc in Resources */ = {isa = PBXBuildFile; fileRef = 4E6167C82BF5983800B7222D /* coin.usdc */; };
+		4E6167CF2BF5983800B7222D /* maze.usdc in Resources */ = {isa = PBXBuildFile; fileRef = 4E6167C92BF5983800B7222D /* maze.usdc */; };
+		4E6167D02BF5983800B7222D /* plane.usdc in Resources */ = {isa = PBXBuildFile; fileRef = 4E6167CA2BF5983800B7222D /* plane.usdc */; };
+		4E6167D12BF5983800B7222D /* Scene.usda in Resources */ = {isa = PBXBuildFile; fileRef = 4E6167CB2BF5983800B7222D /* Scene.usda */; };
 		F5ED3F3D2BF586B500A244A8 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = F5ED3F3C2BF586B500A244A8 /* RealityKitContent */; };
 		F5ED3F3F2BF586B500A244A8 /* MazeGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED3F3E2BF586B500A244A8 /* MazeGameApp.swift */; };
 		F5ED3F412BF586B500A244A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED3F402BF586B500A244A8 /* ContentView.swift */; };
@@ -29,6 +34,11 @@
 
 /* Begin PBXFileReference section */
 		4E6167C22BF5937A00B7222D /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
+		4E6167C72BF5983800B7222D /* barrier.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; path = barrier.usdc; sourceTree = "<group>"; };
+		4E6167C82BF5983800B7222D /* coin.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; path = coin.usdc; sourceTree = "<group>"; };
+		4E6167C92BF5983800B7222D /* maze.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; path = maze.usdc; sourceTree = "<group>"; };
+		4E6167CA2BF5983800B7222D /* plane.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; path = plane.usdc; sourceTree = "<group>"; };
+		4E6167CB2BF5983800B7222D /* Scene.usda */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Scene.usda; sourceTree = "<group>"; };
 		F5ED3F372BF586B500A244A8 /* MazeGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MazeGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5ED3F3B2BF586B500A244A8 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		F5ED3F3E2BF586B500A244A8 /* MazeGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeGameApp.swift; sourceTree = "<group>"; };
@@ -82,6 +92,11 @@
 		F5ED3F392BF586B500A244A8 /* MazeGame */ = {
 			isa = PBXGroup;
 			children = (
+				4E6167C72BF5983800B7222D /* barrier.usdc */,
+				4E6167C82BF5983800B7222D /* coin.usdc */,
+				4E6167C92BF5983800B7222D /* maze.usdc */,
+				4E6167CA2BF5983800B7222D /* plane.usdc */,
+				4E6167CB2BF5983800B7222D /* Scene.usda */,
 				F5ED3F3E2BF586B500A244A8 /* MazeGameApp.swift */,
 				F5ED3F402BF586B500A244A8 /* ContentView.swift */,
 				F5ED3F422BF586B500A244A8 /* ImmersiveView.swift */,
@@ -201,8 +216,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E6167CF2BF5983800B7222D /* maze.usdc in Resources */,
 				F5ED3F482BF586B600A244A8 /* Preview Assets.xcassets in Resources */,
+				4E6167D12BF5983800B7222D /* Scene.usda in Resources */,
+				4E6167CD2BF5983800B7222D /* barrier.usdc in Resources */,
+				4E6167D02BF5983800B7222D /* plane.usdc in Resources */,
 				F5ED3F452BF586B600A244A8 /* Assets.xcassets in Resources */,
+				4E6167CE2BF5983800B7222D /* coin.usdc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

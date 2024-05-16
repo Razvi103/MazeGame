@@ -12,11 +12,11 @@ import RealityKitContent
 struct SceneView: View {
     var body: some View {
         RealityView { content in
-            // Add the initial RealityKit content
-            if let scene = try? await Entity(named: "Scene", in: realityKitContentBundle) {
-                print("LOADED")
-                content.add(scene)
-            }
+            content.add(try! ModelEntity.load(named: "Scene.usda"))
+            content.add(try! ModelEntity.load(named: "coin.usdc"))
+            content.add(try! ModelEntity.load(named: "maze.usdc"))
+            content.add(try! ModelEntity.load(named: "plane.usdc"))
+            content.add(try! ModelEntity.load(named: "barrier.usdc"))
         }
     }
 }

@@ -9,12 +9,17 @@ import SwiftUI
 
 @main
 struct MazeGameApp: App {
+    @Environment(\.openImmersiveSpace) var openImmersiveSpace
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().task {
+                await openImmersiveSpace(id: "ImmersiveSpace")
+            }
         }.windowStyle(.volumetric)
 
         ImmersiveSpace(id: "ImmersiveSpace") {
+            SceneView()
             ImmersiveView()
         }
     }
