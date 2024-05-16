@@ -21,13 +21,13 @@ struct ContentView: View {
     var body: some View {
         RealityView { content in
             // Add the initial RealityKit content
-            if let scene = try? await Entity(named: "Scene", in: realityKitContentBundle) {
+            if let scene = try? await Entity.loadModel(named: "Scene", in: realityKitContentBundle) {
                 content.add(scene)
             }
         } update: { content in
             // Update the RealityKit content when SwiftUI state changes
             if let scene = content.entities.first {
-                let uniformScale: Float = enlarge ? 1.4 : 1.0
+                let uniformScale: Float = enlarge ? 100 : 100
                 scene.transform.scale = [uniformScale, uniformScale, uniformScale]
             }
         }

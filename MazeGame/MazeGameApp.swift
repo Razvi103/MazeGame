@@ -14,8 +14,8 @@ struct MazeGameApp: App {
             ContentView()
         }.windowStyle(.volumetric)
 
-        ImmersiveSpace(id: "ImmersiveSpace") {
-            ImmersiveView()
-        }
+//        ImmersiveSpace(id: "ImmersiveSpace") {
+//            ImmersiveView()
+//        }
     }
 }
